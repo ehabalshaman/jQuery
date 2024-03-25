@@ -1,0 +1,27 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="style.css">
+  <title>Simple jQuery Application</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+  <h1>jQuery Toggle Button Example1</h1>
+  <button id="toggle-button">ON</button>
+
+  <script>
+
+$(document).ready(function() {
+      $('#toggle-button').click(function() {
+        if ($(this).text() === 'ON') {
+          $(this).text('OFF');
+        } else {
+          $(this).text('ON');
+        }
+      });
+    });
+  </script>
+  </body>
+  </html>
